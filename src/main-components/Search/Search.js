@@ -25,7 +25,7 @@ export class Search extends React.Component {
               value={this.state.repoName}
               data-testid="input-control"
               aria-label="cost-input"
-              spellcheck="false"
+              spellCheck="false"
               />
             <span className="input-group-btn">
               <button type="submit" className="btn" data-testid="trigger-search"><i className="fa fa-search" aria-hidden="true"></i></button>
@@ -36,7 +36,6 @@ export class Search extends React.Component {
             </div>}
           </form>
         </div>
-
     )
   }
 
