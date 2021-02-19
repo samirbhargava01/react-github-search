@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#github-repo-search-engine">GitHub Repo Search Engine </a>
+      <ul>
+        <li><a href="#where-to-find-it">Where to Find it</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>    
+    <li>
+      <a href="#ui-desktop">Desktop Screens</a>
+    </li>
+    <li>
+      <a href="#ui-mobile">Mobile Screens</a>
+    </li>   
+    <li><a href="#features">Technology Used</a>
+     <ul>
+      <li><a href="#react">React</a>
+      </li>
+      <li><a href="#scss">SCSS</a>
+      </li>
+      <li><a href="#react-testing-library">React Testing Library</a>
+      </li>      
+     </ul>
+   </li>
+  </ol>
+</details>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# GitHub Repo Search Engine 
 
-In the project directory, you can run:
+GitHub Repo Search Engine is a User Interface that displays repositories of all the owners in GitHub. This UI offers a search bar where search can be done by providing the Github repository name in the box and internally calls GitHub API to retrieve a list of repos. 
+ 
 
-### `npm start`
+## Where to Find it: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Visit the below URL to access the UI and check for a list of repositories.  
 
-The page will reload if you make edits.\
+```bash
+URL: https://socialflicker.com/
+```
+
+## UI Desktop
+#### Light Theme:
+![Light Theme](https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/desktop-screen.PNG)
+#### Dark Mode:
+![Dark Theme](https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/desktop-screen-dark.PNG)
+
+## UI Mobile
+#### Light Theme:
+![Light Theme](https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/mobile-screen.PNG)
+#### Dark Mode:
+![Dark Theme](https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/mobile-screen-dark.PNG)
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Then, Start it 
+   ```sh
+   npm start
+   ```  
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.  
+The page will reload if you make edits.  
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
+### For Test the project
+  ```sh
+  `npm test`
+  ```
+Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
+### For Build the Project
+  ```sh
+  `npm run build`
+  ```
+Builds the app for production to the `build` folder.  
+It correctly bundles React in production mode and optimizes the build for the best performance.  
+The build is minified, and the filenames include the hashes.  
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Features:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. GitHub Repo Search Engine UI is a React-based application and offers a dark mode for the users. It is purely based on SCSS and designed the theme density with required variables. 
+2. This application uses GitHub API by leveraging the **Query** type to pull required data fields like Repository Name & its link, and GitHub user name & it's link.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## React 
+This application is developed from the react framework, implementing v16.13. 
+Multi theme mode is developed leveraging *styled-components* package and react-hooks. *node-sass* package was used to style the components in scss. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## SCSS
+### Separate Colour Variables
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```css
+$blue-color: #4379FF;
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### One Theme File for Light & Dark theme
+#### For Common Global Colour:
+```scss
+--gb-sm-blue-color: #{$blue-color};
+```
+#### For Theming Colour
+```scss
+--gb-bg-color: #{$dark-color};
+```
+## React Testing Library
+The React Testing Library is a very light-weight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices. Its primary guiding principle is:
+```
+The more your tests resemble the way your software is used, the more confidence they can give you.
+```
