@@ -1,0 +1,50 @@
+// Large desktops
+$breakpoint-xxl: 1921px;
+
+$breakpoint-xl: 1500px;
+
+// large tablets and Mid Desktop
+$breakpoint-lg: 1350px;
+
+// Tablets and small desktops
+$breakpoint-md: 1038px;
+
+$breakpoint-sm: 767px;
+
+@mixin xxl {
+    @media screen and (min-width: $breakpoint-xxl) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media screen and (min-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+
+@mixin md {
+    @media screen and (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (max-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+// Custom devices
+@mixin rwd($breakpoint) {
+    @media (max-width: $breakpoint+'px') {
+        @content;
+    }
+}

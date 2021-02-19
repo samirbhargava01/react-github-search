@@ -1,0 +1,16 @@
+@import './main';
+
+html {
+    --gb-sm-white-color: #{$white-color};
+    --gb-sm-dark-color: #{$dark-color};
+    --gb-sm-error-color: #{$error-color};
+    --gb-sm-gray-color: #{$gray-color};
+
+    --gb-bg-color: #{$white-color};
+    --gb-font-color: #{$blue-color};
+}
+
+section[theme='dark'] {
+    --gb-bg-color: #{$dark-color};
+    --gb-font-color: #{$white-color};
+}

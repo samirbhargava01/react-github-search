@@ -1,3 +1,5 @@
+@import './styles/themes-density';
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -7,32 +9,38 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: var(--gb-sm-dark-color);
   text-align: left;
-  background-color: #fff;
 }
-#main-search {
+.main-search {
   position: fixed;
   overflow-y: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background-color: var(--gb-bg-color);
   padding-bottom: 20px;
 }
-h1 {
+.main-heading {
   font-size: 4vw;
   text-align: center;
-  background: #dadada;
+  background: var(--gb-sm-gray-color);
+  @include sm {
+    font-size: 6vw;
+  }
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.theme-section {
+  display: flex;
+  align-items: center;
+  place-content: flex-end;
+}
 .validation-error {
-  color: red;
+  color: var(--gb-sm-error-color);
   font-size: 0.8rem;
   position: absolute;
 }
@@ -65,16 +73,16 @@ a:hover, a:active, a:focus {
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #4379FF;
+  color: var(--gb-font-color);
   opacity: 0.6; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #4379FF;
+  color: var(--gb-font-color);
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: #4379FF;
+  color: var(--gb-font-color);
 }
 
 @media (max-width: 768px) {
@@ -88,5 +96,16 @@ a:hover, a:active, a:focus {
   .container {
       max-width: 1140px;
       margin: 0 auto;
+  }
+}
+
+.theme-section {
+  color: var(--gb-font-color);  
+  .theme-btn {
+    font-size: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
   }
 }

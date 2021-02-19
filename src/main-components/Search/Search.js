@@ -20,11 +20,12 @@ export class Search extends React.Component {
             <input
               type="search"
               placeholder="Type RepoName here"
-              className="main-search"
+              className="input-search"
               onChange={(e)=> this.setState({repoName: e.target.value, errors: { isRepoNameHasError: false}})}
               value={this.state.repoName}
               data-testid="input-control"
               aria-label="cost-input"
+              spellcheck="false"
               />
             <span className="input-group-btn">
               <button type="submit" className="btn" data-testid="trigger-search"><i className="fa fa-search" aria-hidden="true"></i></button>
