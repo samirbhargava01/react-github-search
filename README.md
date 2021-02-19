@@ -4,7 +4,9 @@
   <a href="https://github.com/samirbhargava01/react-github-search">
     <img src="https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/logo-github-project.png" alt="Logo" width="80" height="80">
   </a>
+  <h5 align="center">GitHub Repo Search Engine</h5>
 </p>
+
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
