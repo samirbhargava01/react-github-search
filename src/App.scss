@@ -5,47 +5,54 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  font-family: "Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--gb-sm-dark-color);
   text-align: left;
+  .main-search {
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--gb-bg-color);
+    padding-bottom: 2rem;
+    .container {
+      @include md {
+        max-width: 1140px;
+        margin: 0 auto;               
+      }
+      
+      @include rwd(768) {
+        max-width: 700px;
+        margin: 0 2rem; 
+      }
+    }
+    .theme-section {
+      display: flex;
+      align-items: center;
+      place-content: flex-end;
+    }    
+    .main-heading {
+      font-size: 4vw;
+      text-align: center;
+      background: var(--gb-sm-gray-color);
+      @include sm {
+        font-size: 6vw;
+      }
+    }    
+  }  
 }
-.main-search {
-  position: fixed;
-  overflow-y: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--gb-bg-color);
-  padding-bottom: 20px;
-}
-.main-heading {
-  font-size: 4vw;
-  text-align: center;
-  background: var(--gb-sm-gray-color);
-  @include sm {
-    font-size: 6vw;
-  }
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.theme-section {
-  display: flex;
-  align-items: center;
-  place-content: flex-end;
-}
+
+
+
 .validation-error {
   color: var(--gb-sm-error-color);
   font-size: 0.8rem;
   position: absolute;
-}
-body {
-  margin: 1em;
 }
 
 #root {
@@ -53,20 +60,10 @@ body {
     margin: 0 auto;
 }
 
-.search-bar {
-    margin: 20px;
-    text-align: center;
-}
-
-.search-bar input {
-    width: 75%;
-}
-
 
 a:hover, a:active, a:focus {
     text-decoration: none;
 }
-
 
 *:focus{
   outline: none;
@@ -85,19 +82,7 @@ a:hover, a:active, a:focus {
   color: var(--gb-font-color);
 }
 
-@media (max-width: 768px) {
-  .container {
-      max-width: 700px;
-      margin: 0 2rem;
-  }
-}
 
-@media (min-width: 1200px) {
-  .container {
-      max-width: 1140px;
-      margin: 0 auto;
-  }
-}
 
 .theme-section {
   color: var(--gb-font-color);  

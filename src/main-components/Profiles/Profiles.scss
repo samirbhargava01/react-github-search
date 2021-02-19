@@ -1,60 +1,62 @@
 @import "../../styles/themes-density";
-img.user {
-  width: 65px;
-  margin-right: 10px;
-  vertical-align: middle;
-  border-radius: 50%;
-  border: 1px solid #4379FF;
-}
 
 .result-box {
-    transition: all 0.2s ease-in-out;
-    position: relative;
-    overflow: hidden;
-    background: var(--gb-bg-color);
-    color: var(--gb-font-color);
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border: 1px solid var(--gb-font-color);
-    border-bottom: 0;
-    &__data {
-      display: flex;
-      align-items: center;
-      .right {
-        display: flex;
-        width: 100%;
-        @include sm {
-          display: block;
-        }        
-        .user-name {
-          flex:1 1 auto;
-          @include sm {
-            margin-bottom: 0;
-          }
-          &__link {
-            color: #4379FF;
-            text-decoration:none;
-            border-bottom: 1px dashed #4379FF;
-          }          
-        }
-        .repo {
-          flex-direction:column-reverse;
-          line-height: 2rem;
-          @include sm {
-            margin-top: 0;
-          }          
-          &__link {
-            color: #4379FF;
-            text-decoration:none;
-            border-bottom: 1px dashed #4379FF;
-          }          
-        }
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  background: var(--gb-bg-color);
+  color: var(--gb-font-color);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 1px solid var(--gb-font-color);
+  border-bottom: 0;
+  &__data {
+    display: flex;
+    align-items: center;
+    .left {
+      .user {
+        width: 6.5rem;
+        margin-right: 1rem;
+        vertical-align: middle;
+        border-radius: 50%;
+        border: 1px solid var(--bg-sm-blue-color);
       }
     }
-    @include sm {
-      padding: 0.5rem;
-    }
-    &:last-child {
-      border-bottom: 1px solid var(--gb-font-color);
+    .right {
+      display: flex;
+      width: 100%;
+      @include sm {
+        display: block;
+      }        
+      .user-name {
+        flex:1 1 auto;
+        @include sm {
+          margin-bottom: 0;
+        }
+        &__link {
+          color: var(--bg-sm-blue-color);
+          text-decoration:none;
+          border-bottom: 1px dashed var(--bg-sm-blue-color);
+        }          
+      }
+      .repo {
+        flex-direction:column-reverse;
+        line-height: 2rem;
+        @include sm {
+          margin-top: 0;
+        }          
+        &__link {
+          color: var(--bg-sm-blue-color);
+          text-decoration:none;
+          border-bottom: 1px dashed var(--bg-sm-blue-color);
+        }          
+      }
     }
   }
+  @include sm {
+    padding: 0.5rem;
+  }
+  &:last-child {
+    border-bottom: 1px solid var(--gb-font-color);
+  }
+}
