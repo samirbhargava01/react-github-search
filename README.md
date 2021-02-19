@@ -31,6 +31,22 @@ URL:
 This application is developed from the react framework, implementing v16.13. 
 Multi theme mode is developed leveraging *styled-components* package and react-hooks. *node-sass* package was used to style the components in scss. 
 
+## SCSS
+### Separate Colour Variables
+
+```css
+$blue-color: #4379FF;
+```
+
+### One Theme File for Light & Dark theme
+#### For Common Global Colour:
+```scss
+--gb-sm-blue-color: #{$blue-color};
+```
+#### For Theming Colour
+```scss
+--gb-bg-color: #{$dark-color};
+```
 
 ## Available Scripts
 
