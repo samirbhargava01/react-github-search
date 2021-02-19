@@ -9,6 +9,13 @@
       </ul>
     </li>
     <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>    
+    <li>
       <a href="#ui-desktop">Desktop Screens</a>
     </li>
     <li>
@@ -53,6 +60,56 @@ URL:
 #### Dark Mode:
 ![Dark Theme](https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/mobile-screen-dark.PNG)
 
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Then, Start it 
+   ```sh
+   npm start
+   ```  
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.  
+The page will reload if you make edits.  
+You will also see any lint errors in the console.
+
+### For Test the project
+  ```sh
+  `npm test`
+  ```
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### For Build the Project
+  ```sh
+  `npm run build`
+  ```
+Builds the app for production to the `build` folder.  
+It correctly bundles React in production mode and optimizes the build for the best performance.  
+The build is minified, and the filenames include the hashes.  
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
 ## Features:
 
 1. GitHub Repo Search Engine UI is a React-based application and offers a dark mode for the users. It is purely based on SCSS and designed the theme density with required variables. 
@@ -83,29 +140,3 @@ The React Testing Library is a very light-weight solution for testing React comp
 ```
 The more your tests resemble the way your software is used, the more confidence they can give you.
 ```
-
-## Available Scripts
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).  
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.  
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.  
-The page will reload if you make edits.  
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.  
-It correctly bundles React in production mode and optimizes the build for the best performance.  
-The build is minified, and the filenames include the hashes.  
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
