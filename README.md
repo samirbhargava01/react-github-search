@@ -1,3 +1,33 @@
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#github-repo-search-engine">GitHub Repo Search Engine </a>
+      <ul>
+        <li><a href="#where-to-find-it">Where to Find it</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#ui-desktop">Desktop Screens</a>
+    </li>
+    <li>
+      <a href="#ui-mobile">Mobile Screens</a>
+    </li>   
+    <li><a href="#features">Technology Used</a>
+     <ul>
+      <li><a href="#react">React</a>
+      </li>
+      <li><a href="#scss">SCSS</a>
+      </li>
+      <li><a href="#react-testing-library">React Testing Library</a>
+      </li>      
+     </ul>
+   </li>
+  </ol>
+</details>
+
+
 # GitHub Repo Search Engine 
 
 GitHub Repo Search Engine is a User Interface that displays repositories of all the owners in GitHub. This UI offers a search bar where search can be done by providing the Github repository name in the box and internally calls GitHub API to retrieve a list of repos. 
@@ -22,6 +52,7 @@ URL:
 ![Light Theme](https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/mobile-screen.PNG)
 #### Dark Mode:
 ![Dark Theme](https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/mobile-screen-dark.PNG)
+
 ## Features:
 
 1. GitHub Repo Search Engine UI is a React-based application and offers a dark mode for the users. It is purely based on SCSS and designed the theme density with required variables. 
@@ -46,6 +77,11 @@ $blue-color: #4379FF;
 #### For Theming Colour
 ```scss
 --gb-bg-color: #{$dark-color};
+```
+## React Testing Library
+The React Testing Library is a very light-weight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices. Its primary guiding principle is:
+```
+The more your tests resemble the way your software is used, the more confidence they can give you.
 ```
 
 ## Available Scripts
