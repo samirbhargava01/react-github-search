@@ -19,7 +19,7 @@
         margin-right: 1rem;
         vertical-align: middle;
         border-radius: 50%;
-        border: 1px solid var(--bg-sm-blue-color);
+        border: 1px solid var(--gb-sm-blue-color);
       }
     }
     .right {
@@ -34,9 +34,9 @@
           margin-bottom: 0;
         }
         &__link {
-          color: var(--bg-sm-blue-color);
+          color: var(--gb-sm-blue-color);
           text-decoration:none;
-          border-bottom: 1px dashed var(--bg-sm-blue-color);
+          border-bottom: 1px dashed var(--gb-sm-blue-color);
         }          
       }
       .repo {
@@ -46,9 +46,9 @@
           margin-top: 0;
         }          
         &__link {
-          color: var(--bg-sm-blue-color);
+          color: var(--gb-sm-blue-color);
           text-decoration:none;
-          border-bottom: 1px dashed var(--bg-sm-blue-color);
+          border-bottom: 1px dashed var(--gb-sm-blue-color);
         }          
       }
     }
