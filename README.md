@@ -1,3 +1,11 @@
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/samirbhargava01/react-github-search">
+    <img src="https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/logo-github-project.png" alt="Logo" width="80" height="80">
+  </a>
+</p>
+
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
