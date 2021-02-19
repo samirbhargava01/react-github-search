@@ -68,6 +68,7 @@ It is compatiable for Desktop, Ipad, Mobile design.
 #### Dark Mode:
 ![Dark Theme](https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/desktop-screen-dark.PNG)
 
+<br>
 
 ## UI Mobile
 #### Light Theme:
