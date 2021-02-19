@@ -56,11 +56,16 @@ Visit the below URL to access the UI and check for a list of repositories.
 URL: https://socialflicker.com/
 ```
 
+## Responsive Design
+
+It is compatiable for Desktop, Ipad, Mobile design.
+
 ## UI Desktop
 #### Light Theme:
 ![Light Theme](https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/desktop-screen.PNG)
 #### Dark Mode:
 ![Dark Theme](https://github.com/samirbhargava01/react-github-search/blob/master/src/resources/desktop-screen-dark.PNG)
+
 
 ## UI Mobile
 #### Light Theme:
